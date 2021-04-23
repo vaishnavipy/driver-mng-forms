@@ -97,7 +97,7 @@ font-weight: 600;
 .drop-down-icon{
 cursor: pointer;
 }
-.drop-down-col-5{
+.grid-col-5{
   display: grid;
   grid-template-columns: 23% 23% 23% 23% 5%;
   padding: 0 0.5em ;
@@ -105,7 +105,7 @@ cursor: pointer;
    gap:0px;
 
 }
-.drop-down-col-4{
+.grid-col-4{
   display: grid;
   grid-template-columns:  repeat(4,1fr);
   padding: 0 0.5em ;
@@ -120,7 +120,7 @@ cursor: pointer;
   width: 95%;
   margin: 0;
 }
-.drop-down-col .driver-info-div{
+.drop-down-col div{
   padding-left: 0.5em;
   border-right: 1px solid gray;
   padding-top: 0.5em;
@@ -134,4 +134,16 @@ cursor: pointer;
 }
 .no-right-border{
   border-right: 0px ;
+}
+.driver-data{
+  border-top: 1px solid gray;
+  background-color: #EEEFF0;
+}
+.edit-icons{
+  padding: 0 0.2em ;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.edit-icons:hover{
+  color: #8ABBD8;
 }
