@@ -1,0 +1,137 @@
+*{
+box-sizing: border-box;  
+}
+.main-container{
+  width: 100vw;
+  height: 100vh;
+  padding: 1em 0.5em;
+ display: grid;
+ grid-template-rows: auto 1fr;
+}
+
+
+/*----------ACCORDION TABS--------*/
+.accordion-tabs{
+  display: flex;
+  gap:5px;
+  margin: 0;
+    
+}
+.tab{
+  margin: 0;
+ background-color: #D9DBD9;
+ color: navy;
+ font-weight: 700;
+ border-top-right-radius: 5px;
+ border-top-left-radius: 5px;
+ padding: 0.5em ;
+ cursor: pointer;
+ transition: all 0.5s;
+}
+.active{
+  background-color: #8ABBD8;  
+  color: black;
+}
+.hr{
+  margin: 0;
+  border-top: 4px solid #8ABBD8;
+}
+.tab:hover{
+  background-color: #8ABBD8;  
+}
+
+/*----------MAIN FORM--------*/
+.main-form{
+  background-color: #D5E6EF;
+  overflow: scroll; 
+color: black;
+font-weight: 500;
+
+}
+/*----------DRIVER INFO--------*/
+.driver-info{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4,1fr);
+  padding: 0.5em ;
+}
+.driver-info p{
+  margin: 0;
+}
+.labels{
+  font-weight: 600;
+  margin: 0;
+}
+.mandatory{
+  color :red;
+}
+.driver-info input[type=text],select{
+width: 100%;
+  font-size: 1rem;
+}
+.driver-info select{
+  padding:0.3em;
+}
+.driver-info-div{
+  margin-bottom: 0.8em;
+  
+}
+.checkbox{
+ margin-bottom: 1em;
+}
+button{
+ background-color: #8ABBD8;
+  border:1px solid navy;
+}
+/*----------DROP DOWN INFO--------*/
+.drop-down-tab{
+  background-color: #8ABBD8;
+  border: 1px solid #B9D0E1;
+display: flex;
+gap: 10px;
+font-weight: 600;
+}
+.drop-down-tab p{
+  margin: 0;
+}
+.drop-down-icon{
+cursor: pointer;
+}
+.drop-down-col-5{
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23% 5%;
+  padding: 0 0.5em ;
+   margin: 0;
+   gap:0px;
+
+}
+.drop-down-col-4{
+  display: grid;
+  grid-template-columns:  repeat(4,1fr);
+  padding: 0 0.5em ;
+   margin: 0;
+   gap:0px;
+
+}
+.drop-down-col .driver-info-div{
+  margin-bottom: 0;
+}
+.drop-down-col input{
+  width: 95%;
+  margin: 0;
+}
+.drop-down-col .driver-info-div{
+  padding-left: 0.5em;
+  border-right: 1px solid gray;
+  padding-top: 0.5em;
+
+  padding-bottom: 0.5em;
+}
+.drop-down-hr{
+  margin: 0;
+
+  border-top:  1px solid gray;
+}
+.no-right-border{
+  border-right: 0px ;
+}
